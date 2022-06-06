@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Area</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer';   /* by using this property we can create a layout easily in colums and rows*/
+
+    }
+    .class{
+        background-color: yellow;
+        border: 2px solid black;
+    }
+#navbar{
+   grid-area: navbar;
+}
+#section{
+   grid-area: section;
+}
+#aside{
+   grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="class">
+            Home Services about us
+        </div>
+        <div id="section" class="class">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum incidunt temporibus quasi amet rerum maiores omnis qui placeat officiis esse odio harum laborum laudantium cupiditate quo quaerat sed, atque inventore impedit expedita? Numquam fugiat tempora vitae voluptatibus magnam, corrupti est minima laborum iusto adipisci ut commodi animi ad consequatur aspernatur dignissimos minus assumenda reprehenderit fugit. Voluptate molestiae voluptatibus mollitia facilis alias odio optio, iste sed cum doloremque eum officiis? Soluta accusantium illo et, qui minus dolores voluptas est hic quia fugit delectus molestiae saepe deserunt totam repellat aut fuga inventore consectetur nobis earum accusamus nemo aspernatur quasi. Iusto, quaerat libero!</div>
+        <div id="aside" class="class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe qui maxime minima ab dolore quia sit possimus id veritatis recusandae? Officia error, placeat tenetur corporis totam sapiente perspiciatis odio veniam dolor? Sed suscipit autem, voluptatibus unde maxime animi ex facere, porro, inventore earum dolorum in! Corrupti repellendus minima et vero placeat dolorem, vitae sapiente commodi repudiandae distinctio quas culpa sed eaque animi at rerum necessitatibus aperiam quasi. Aliquid nulla rem cupiditate eos beatae dignissimos voluptate, aliquam ipsa, cum praesentium sunt, iusto nostrum veniam! Eos accusamus qui repudiandae cumque dignissimos tenetur esse iure assumenda consectetur, vitae nam recusandae libero perspiciatis nemo.</div>
+        <footer class="class">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium deleniti sed beatae earum corporis magni impedit modi aperiam. Quia, autem.</footer>
+    </div>
+</body>
+</html>

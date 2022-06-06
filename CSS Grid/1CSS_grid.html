@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid
+    </title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 300px 100px 100px;  /* isse hum uske columns me divide kar rahe hai */
+            grid-template-columns: repeat(3,1fr);   /* repeat func. se hum num ersko repat krwa skte hai*/
+            /* grid-template-columns: 1fr 2fr 1fr;    this is  a ratio in which the columns will be divided  */
+
+        }
+        .item{
+            /* height: 100px;
+            width: 100px; */
+            background-color: aqua;
+            border: 2px solid red;
+            padding: 15px 0px;
+            /* grid-column: 1 / span 2; */
+        }
+        .item:first-child{
+            /* grid-column: 1/ span 3; */
+            grid-row: 1/ span 3;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div class="item">This is my box-1</div>
+         <div class="item">This is my box-2</div>
+         <div class="item">This is my box-3</div>
+         <div class="item">This is my box-4</div>
+         <div class="item">This is my box-5</div>
+         <div class="item">This is my box-6</div>
+         <div class="item">This is my box-7</div>
+         <div class="item">This is my box-8</div>
+         <div class="item">This is my box-9</div>
+         <div class="item">This is my box-10</div>
+     </div>
+</body>
+</html>

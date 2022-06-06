@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(238, 244, 167);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#First-box{
+    /* border: 2px solid black; */
+}
+#navbar{
+    background-color: rgb(226, 253, 119);
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 15px;
+    margin: 0px 15px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;    
+
+}
+#navbar ul li a:hover{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(190, 134, 134);    
+}
+
+#second-box{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 500px;
+   
+}
+#second-box::before{
+    content: "";
+    background: url(1.jpg) no-repeat center center/ cover;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 634px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#second-box p{
+    text-align: center;
+    width: 396px;
+    margin: 50px auto;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.heading{
+   color: rgb(241, 23, 30);
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 100px;
+    padding: 5px;
+    margin: 90px 0px;
+}
+
+.center{
+    text-align: center;
+}
+
+.Base-heading{
+    margin: 17px 0px;
+    font-size: 35px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+#third-box{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(116, 199, 171);
+}
+.box{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: aqua;
+    margin: 23px;
+    padding: 8px;
+    width: 271px;
+    height: 168px;
+    box-shadow: 3px 3px 3px 3px black;
+}
+.box p{
+    text-align: center;
+    margin: 22px 0px;
+}
+.box h2{
+    margin: 4px 0px;
+    font-weight: bolder;
+    color: rgb(112, 78, 33);
+}
+
+#fourth-box{
+    border: 2px solid black;
+    width: 60%;
+    height: 929px;
+    margin: auto;
+}
+#fourth-box h3{
+    text-align: center;
+    font-size: 30px;
+}
+#fourth-box h4{
+    text-align: center;
+    font-size: 30px;
+    color: green;
+}
+#fourth-box p{
+    /* border: 2px solid black; */
+    margin: -113px 233px;
+    width: 50%;
+}
+#home-box{
+    /* border: 2px solid blue; */
+    width: 95%;
+    height: 173px;
+    margin: 32px 21px;
+}
+
+#home-box img{
+    width: 154px;
+    height: 137px;
+    margin: 0px 0px ;
+}
+#home-section{
+   display: flex;
+   flex-direction: column;
+}
+
+#container{
+    border: 2px solid yellow;
+    width: 50%;
+    height: 230px;
+    margin: auto;
+    background-color: rgb(198, 250, 76);
+}
+
+#container input{
+    width: 400px;
+    margin: 11px 164px;
+    padding: 7px;
+    /* background-color: rgb(243, 61, 61); */
+    color: rgb(25, 24, 24);
+    /* outline: none; */
+    border: none;
+    border-bottom: 4px solid blue;
+
+}
+#container button{
+    width: 70px;
+    margin: 11px 353px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+   /* height: 30px;
+     justify-content: center;
+    align-items: center; */
+    
+}
+
+@media only screen and (max-width: 1238px){
+    #navbar ul{
+        flex-wrap: wrap;
+    }
+
+    .heading{
+        font-size: 60px;
+    }
+    #third-box{
+        flex-wrap: wrap;
+    }
+    #home-box p{
+        text-align: center;
+        width: 201px;
+        margin: 25px 21px;
+    }
+    #fourth-box{
+        height: 1058px;
+        width: 70%;
+    }
+    #home-box img{
+        width: 42px;
+        height: 42px;
+        margin: -26px 100px;
+    }
+    #home-box{
+        border: 2px solid black;
+        width: 240px;
+        margin: 19px 15px;
+    }
+    #fourth-box h4{
+        font-size: 25px;
+        margin:  2px 0px;
+    }
+    #second-box::before {
+        content: "";
+        background: url(1.jpg) no-repeat center center/ cover;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        width: 100%;
+        height: 696px;
+        z-index: -1;
+        opacity: 0.6;
+    }
+    #container{
+        width: 70%;
+    }
+    #container input{
+        width: 245px;
+        margin: 14px 10px;
+    }
+    #container button{
+        margin: 4px 104px;
+    }
+}
+
